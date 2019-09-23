@@ -1,0 +1,23 @@
+-----------------------------------------------------------------------
+1. Create instances of our ApolloClient and Cache (using InMemoryCache)
+-----------------------------------------------------------------------
+2. Wrap our application in an ApolloProvider
+-----------------------------------------------------------------------
+3. Set default client state. This is the structure for our local cache.
+-----------------------------------------------------------------------
+4. Query items available for purchase using apollo-link-state, from our
+cache, rather than directly from our api.js file.
+-----------------------------------------------------------------------
+5. Query cart items and total from our cache.
+-----------------------------------------------------------------------
+6. Set up our addItemToCart resolver.
+-----------------------------------------------------------------------
+7. Add mutation to add item to our cart.
+  7.x. This will require us to set up local resolvers.
+-----------------------------------------------------------------------
+8. Add convertCurrency mutation resolver.
+  8.x. Pull currency conversion rates from online api.
+  8.x. Update item prices and cart total.
+-----------------------------------------------------------------------
+9. Add cache persistence - save our data on refresh
+-----------------------------------------------------------------------
