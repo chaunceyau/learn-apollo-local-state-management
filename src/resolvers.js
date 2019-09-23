@@ -11,7 +11,8 @@ export const resolvers = {
 
       const newItem = itemsForSale.find(item => item.id === args.id)
 
-      cache.writeData({
+      cache.writeQuery({
+        query: QUERY_CART_INFO,
         data: {
           cart: {
             items: cart.items.concat(newItem),
